@@ -73,17 +73,8 @@ def main():
 
     max_it = 10;   E = 1;  alpha = .1;
 
-
-    # Implemente a função Adaline que deve retornar o vetor de pesos e o bias, respectivamente.
-    #w, bias = adaline(max_it=100, Epsilon=.0000001, alpha=.1, X=X, d=d)
-    #plotar(w[0], w[1], bias, "Porta lógica AND com Adaline")
-
-    # Implemente a função Percepton que deve retornar o vetor de pesos e o bias, respectivamente.
-
     w, bias = perceptron(max_it, E, alpha, X, d)
     plotar(w[0], w[1], bias, "Porta lógica AND com Perceptron")
-
-
 
 
 if __name__ == '__main__':
